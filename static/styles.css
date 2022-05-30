@@ -1,0 +1,127 @@
+
+body {
+}
+
+a {
+text-decoration: none;
+}
+
+.nav-link {
+font-family: 'Anton', sans-serif;
+font-size: 30px;
+color: #F77E21;
+margin-left: 12rem;
+}
+
+
+.intro_div {
+background-image: url('/static/images/space1.jpg');
+padding: 8rem;
+padding-top: 12rem;
+}
+
+.welcome{
+font-family: 'Anton', sans-serif;
+color: #FFE459;
+text-align: center;
+font-style: italic;
+}
+
+.wel_text_div {
+padding-top: 14rem;
+text-align: center;
+margin: 0 25rem 0 25rem;
+
+}
+
+.titel_wel_text {
+color: #05595B;
+
+}
+
+.wel_text {
+color: #05595B;
+padding: 2rem 7rem 0 7rem;
+font-family: 'Righteous', cursive;
+font-style: bold;
+text-align: left;
+}
+
+.signatur {
+font-family: 'Dancing Script', cursive;
+color: #FFE459;
+font-size: 40px;
+text-align: right;
+padding-right: 15rem;
+}
+
+.posts_div {
+padding: 7rem 44rem;
+background-image: url('/static/images/padback2.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-color: #000000;
+}
+
+.post_text {
+margin-top: 10rem;
+width: 40rem;
+height: 17rem;
+overflow: auto;
+}
+
+
+.post_title {
+font-family: 'Anton', sans-serif;
+color: #FFE459;
+text-align: left;
+font-style: italic;
+}
+
+.story_writing {
+height: 100vh;
+padding: 10rem;
+background-color: #000000;
+background-image: url('/static/images/padback1.gif');
+background-position: center;
+background-size: 56%;
+background-repeat: no-repeat;
+}
+
+.form_div {
+padding: 12rem  0 0 28rem;
+width: 82%;
+color: #FFE459;
+font-family: 'Anton', sans-serif;
+}
+
+hr {
+color: #FFE459;
+}
+
+.reading_div {
+margin: 15rem  0 0 28rem;
+width: 55%;
+height: 70%;
+color: #FFE459;
+overflow: auto;
+}
+
+.del_button {
+padding-left: 33rem;
+font-family: 'Anton', sans-serif;
+}
+
+.del_button_rd {
+padding-left: 45rem;
+font-family: 'Anton', sans-serif;
+}
+
+.login_form {
+margin-left: 15rem;
+margin-top: 6rem;
+width: 35%;
+background-color: #000000;
+font-family: 'Anton', sans-serif;
+}
+

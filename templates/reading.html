@@ -1,0 +1,24 @@
+{% include "header.html" %}
+
+    <div class="story_writing">
+        <div class="reading_div">
+            <a class="del_button_rd" href="{{ url_for('editing_story', story_id=story.id) }}">Edit Story</a>
+            {% if current_user.is_authenticated %}
+            <a class="del_button_rd" href="{{ url_for('delete_story', story_id=story.id) }}">Delete Story</a>
+            {% endif %}
+            <P class="post_title">
+                {{ story.title }}
+            </P>
+            <P class="post_title">
+                {{ story.stardate }}
+            </P>
+            <P class="post_title">
+                {{ story.author }}
+            </P>
+            <p>
+                {{ story.story|safe }}
+            </p>
+        </div>
+    </div>
+
+{% include "footer.html" %}

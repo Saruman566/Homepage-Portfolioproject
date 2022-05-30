@@ -1,0 +1,53 @@
+{% include "header.html" %}
+
+
+        <div class="intro_div" style="background-image: url('{{ url_for('static', filename='images/space1.jpg')}}')">
+            <h1 class="welcome">
+                Welcome to the Final Frontier Commander.
+            </h1>
+            <h2 class="welcome">
+                These are the voyagers of YOUR Starship.
+            </h2>
+            <div class="wel_text_div">
+
+                        <h5 class="titel_wel_text">
+                            Stardate:&emsp; 28052022&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Admiral Jackmann to YOU.
+                        </h5>
+                        <p class="wel_text">
+                            Commander.<br>
+                            The United Federation of Planets, the Klingon Empire and the Romulan Star Empire
+                            needs more Captains like you. For this reason, I am promoting you to Captain.<br>
+                            Go to New Romulus, Kronos or the Sol system. <br>Board your new ship and fly to Space
+                            .................Where no man has gone bevor!&emsp; Good Luck!
+                        </p>
+                        <p class="signatur">
+                            Jackmann
+                        </p>
+            </div>
+        </div>
+
+        <div class="posts_div">
+            <div class="post_text">
+                {% for story in allstorys %}
+                <a class="del_button" href="{{ url_for('editing_story', story_id=story.id) }}">Edit Story</a>
+                {% if current_user.is_authenticated %}
+                <a class="del_button" href="{{ url_for('delete_story', story_id=story.id) }}">Delete Story</a>
+                {% endif %}
+                <a href="{{ url_for('reading_story', index=story.id) }}">
+                <h1 class="post_title">
+                    TITLE&ensp;:&emsp;&emsp; {{story.title}}
+                </h1>
+                <h2 class="post_title">
+                    STARDATE&ensp;:&emsp; {{story.stardate}}
+                </h2>
+                <h5 class="post_title">
+                    AUTHOR&ensp;:&emsp;&emsp;&emsp;&emsp;&emsp; {{story.author}}
+                </h5>
+                </a>
+                <hr>
+                {% endfor %}
+            </div>
+        </div>
+
+
+{% include "footer.html" %}
