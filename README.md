@@ -6,4 +6,3 @@ Admin login integrated and only Admin can delete Storys
 
 Admin Login : Admin007@page.de   pw: 000000
 
-You will see the Page working?   : https://portfolio-startrek-story-page.herokuapp.com/
